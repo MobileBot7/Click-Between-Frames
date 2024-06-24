@@ -533,9 +533,9 @@ class $modify(EndLevelLayer) {
 		if (!softToggle || actualDelta) {
 			std::string text;
 
-			if (softToggle && actualDelta) text = "PB";
-			else if (actualDelta) text = "CBF+PB";
-			else text = "CBF";
+			if (softToggle && actualDelta) text = "";
+			else if (actualDelta) text = "";
+			else text = "";
 
 			cocos2d::CCSize size = cocos2d::CCDirector::sharedDirector()->getWinSize();
 			CCLabelBMFont *indicator = CCLabelBMFont::create(text.c_str(), "bigFont.fnt");
